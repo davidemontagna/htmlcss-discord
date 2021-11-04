@@ -114,7 +114,8 @@ body{
 
 /*Inizio blocco immagini e testi*/
 .container{
-    padding: 5%;
+    width: 80%;
+    margin: 0 auto;
 }
 .container img{
     width: 40%;
@@ -188,4 +189,13 @@ main .container:nth-child(3){
 .container-big .stars{
     width: 65%;
     margin: 0 160px;
+}
+
+footer{
+    width: 100vw;
+    background-color: #23272a;
+}
+
+footer .container h1{
+    color: #7289da;
 }
