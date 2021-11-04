@@ -9,6 +9,8 @@ body{
     color: #23272a;
 }
 
+/*menù navigazione*/
+
 .navigation-center{
     width: 100%;
     height: 80px; 
@@ -145,11 +147,16 @@ body{
     margin: 5% 0 5% 5%;
 }
 
+main .container:nth-child(3){
+    background-color: #f6f6f6;
+}
+
 .container-big{
     margin: 0 20%;
+    
 }
 .container-big img{
-    margin: 0 6%;
+    margin: 50px 6%;
 }
 
 .container-big div h1{
@@ -165,11 +172,20 @@ body{
 .container-big div h2{
     text-align: center;
     font-size: 30px;
+    
 }
 
-#download-bottom .button{
+#download-bottom{
     text-align: center;
-    background-color: #8ea1e1;
-    color: white;
     margin: 50px 0;
+}
+
+#download-bottom .button{    
+    background-color: #8ea1e1;
+    color: white;    
+}
+
+.container-big .stars{
+    width: 65%;
+    margin: 0 160px;
 }
