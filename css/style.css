@@ -9,11 +9,31 @@ body{
     color: #23272a;
 }
 
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a{
+    color: #f0f3fd;
+    text-decoration: none;
+}
+
 /*menù navigazione*/
 
-.navigation-center{
+.container-center{
+    width: 90%;
+    max-width: 1180px; 
+    margin: 0 auto;    
+}
+
+
+header{
+    height: 50px;
     width: 100%;
-    height: 80px; 
+    display: inline-block;
+    margin: 0 auto;
     background-color: #3161e0;
     position: fixed;
     top: 0;
@@ -21,22 +41,19 @@ body{
     z-index: 5;
 }
 
-.clearfix{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.top-banner{
+.container{
     width: 80%;
-    display: inline-block;
-    margin: 0 auto;
+    margin: 10px auto;
+    line-height: 30px;
+    text-align: center;
 }
 
 .logo{
-    padding: 25px;
-    margin: 0 100px;
+    float: left;
+}
+
+.logo img{
+    width: 100px;
 }
 
 
@@ -44,18 +61,15 @@ body{
     float: left;
 }
 
+
+
 #main-navigation{
-    margin: 30px;
+    display: inline-block;
 }
 
 #main-navigation li{
     list-style: none;
-}
-
-#main-navigation li a{
-    color: #f0f3fd;
-    text-decoration: none;
-    padding: 30px;
+    margin: 0 25px;
 }
 
 #main-navigation li a:hover{
@@ -63,27 +77,37 @@ body{
 }
 
 #accedi{
-    margin: 0 5%;  
+      
     float: right;
+    
+}
+#accedi .button{
+    color: #23272a;
 }
 
 /*bottoni*/
 .button{
+    
     text-decoration: none;
     background-color: white;
     border-radius: 50px;
-    padding: 10px;
-}
-.big-image{
-    position: relative;
-    background-image: url(../img/jumbo.png);
-    width: 100%;
-    height: 600px;
-    background-size: cover;
+    padding: 15px;
 }
 
-.big-image img{
-    width: 100%;
+.button:hover{
+    text-decoration: none;
+    color: rgba(49,97,224,255);
+}
+
+
+
+/*Jumbo image e scritte*/
+.big-image{
+    min-height: 546px;
+    position: relative;
+    background-image: url(../img/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .txt-image{
@@ -113,13 +137,6 @@ body{
 }
 
 /*Inizio blocco immagini e testi*/
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-.container img{
-    width: 40%;
-}
 
 .left-image{
     float: left;
@@ -198,4 +215,13 @@ footer{
 
 footer .container h1{
     color: #7289da;
+}
+
+.colonna1{
+    color: white;
+    width: 20%;
+}
+.colonna1 a img{
+    width: 50px;
+    display: block;
 }
